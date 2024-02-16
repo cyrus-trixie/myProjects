@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>innerHTML</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script>
+        let button = document.getElementById("container");
+        button.innerHTML = "<button onclick='but()'>BUY!</button>";
+
+        function but() {
+            button.innerHTML += "<p> Thanks for buying</p>"
+
+        }
+    </script>
+</body>
+
+</html>

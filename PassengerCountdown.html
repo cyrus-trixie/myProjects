@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PassengerCountdown</title>
+
+</head>
+
+<body>
+    <p style="text-align:center; font-size: 50px;">People entered:</p>
+    <p style="font-size: 100px;text-align: center; margin: 0%;" id="num">0</p>
+    <button onclick="logg()" id="button" style="border-radius: 10px;color:white;margin-left: 550px;background-color: black;font-size: 50px; ">increment</button>
+    <br><br>
+    <button onclick="saves()" id="save" style="border-radius: 10px; color: black; background-color: yellow; margin-left: 600px;font-size: 50px;">save</button>
+    <br><br>
+    <button onclick="reset()" id="reset" style="border-radius: 10px; color:white; background-color:red;font-size: 50px; margin-left: 600px;">reset</button>
+    <br>
+    <p id="save-el" style="font-size: 50px; text-align: center;">Previous entities:</p>
+    <script>
+        let num2 = document.getElementById("num");
+        let count = 0;
+        let saveEl = document.getElementById("save-el");
+
+        function logg() {
+            count++;
+            num2.innerText = count;
+        }
+
+        function saves() {
+            console.log(count);
+            let count2 = " " + count + " - ";
+            saveEl.innerText += count2;
+        }
+
+        function reset() {
+            count = 0;
+            num2.innerText = count;
+            //saveEl.innerText = "Previous entities:";
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+button {
+    width: 24%;
+    height: 45px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    cursor: pointer;
+    background: whitesmoke;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.but:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+#equal {
+    width: 99.2%;
+}
+
+.btn {
+    background-color: #ffb84d;
+}
+
+body {
+    background: linear-gradient(#f4f4ed, white);
+    padding: 0;
+    margin: 0;
+}
+
+div.box {
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    border-radius: 2px;
+    padding: 15px 15px 20px 20px;
+    background: #eeeded;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+#screen {
+    font-weight: 100;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 5px;
+    background-color: whitesmoke;
+    text-align: right;
+    direction: ltr;
+    outline: none;
+    border: none;
+}
+
+footer {
+    color: rgb(34, 25, 25);
+    font-size: medium;
+    margin-top: 50px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1150px;
+    text-align: center;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+
+footer:hover {
+    color: blueviolet;
+}
+
+@media(max-width:320px) {
+    button {
+        width: 23.4%
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        return
+    </title>
+</head>
+
+<body>
+    <script>
+        //math.floor
+        let floored = rollDice();
+        alert(floored);
+        //math.random()
+        function rollDice() {
+            return Math.floor(Math.random() * 6) + 1;
+
+        }
+
+        let player1time = 100;
+        let player2time = 200;
+
+        /*function getPlayerTime() {
+            if (player1time > player2time) {
+                return player1time;
+            } else if (player2time > player1time) {
+                return player2time;
+            } else {
+                return player1time;
+            }
+        }
+        let playertime = getPlayerTime();
+        console.log(playertime);*/
+    </script>
+</body>
+
+</html>

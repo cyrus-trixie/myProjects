@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>function</title>
+
+</head>
+
+<body>
+    <p style="font-size: 100px;text-align: center;" id="num">0</p>
+    <button onclick="logg()" id="button" style="border-radius: 10px;color:white;margin-left: 630px;background-color: black;">increment</button>
+    <script>
+        let num2 = document.getElementById("num");
+        let count = 0;
+
+        function logg() {
+            count++;
+            num2.innerText = count;
+        }
+    </script>
+
+</body>
+
+</html>

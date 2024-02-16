@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pass Text</title>
+    <link rel="stylesheet" href="/passMessage.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Pass the Message</h1>
+        <form>
+            <input type="text" id="txt" placeholder="Enter message">
+        </form>
+        <button onclick="getmess()" id="submit">submit</button>
+        <p id="message"></p>
+    </div>
+    <script>
+        function getmess() {
+            document.getElementById("message").textContent = txt.value;
+            txt.value = ""
+        }
+    </script>
+</body>
+
+</html>
